@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="20966" started-at="2017-09-01T12:15:09Z" finished-at="2017-09-01T12:15:30Z">
+    <groups>
+    </groups>
+    <test name="FFTest" duration-ms="20966" started-at="2017-09-01T12:15:09Z" finished-at="2017-09-01T12:15:30Z">
+      <class name="com.cts.tests.LoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.cts.tests.LoginTest@64bf3bbf]" name="setUp" is-config="true" duration-ms="17325" started-at="2017-09-01T17:45:09Z" finished-at="2017-09-01T17:45:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://demoqa.com/registration/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="submitBlankForm()[pri:0, instance:com.cts.tests.LoginTest@64bf3bbf]" name="submitBlankForm" duration-ms="441" started-at="2017-09-01T17:45:27Z" finished-at="2017-09-01T17:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitBlankForm -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cts.tests.LoginTest@64bf3bbf]" name="takeScreenShotOnFailure" is-config="true" duration-ms="205" started-at="2017-09-01T17:45:27Z" finished-at="2017-09-01T17:45:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitBlankForm status=SUCCESS method=LoginTest.submitBlankForm()[pri:0, instance:com.cts.tests.LoginTest@64bf3bbf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="userRegistration()[pri:0, instance:com.cts.tests.LoginTest@64bf3bbf]" name="userRegistration" duration-ms="2746" started-at="2017-09-01T17:45:27Z" finished-at="2017-09-01T17:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistration -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cts.tests.LoginTest@64bf3bbf]" name="takeScreenShotOnFailure" is-config="true" duration-ms="207" started-at="2017-09-01T17:45:30Z" finished-at="2017-09-01T17:45:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userRegistration status=SUCCESS method=LoginTest.userRegistration()[pri:0, instance:com.cts.tests.LoginTest@64bf3bbf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.cts.tests.LoginTest@64bf3bbf]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-09-01T17:45:30Z" finished-at="2017-09-01T17:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cts.tests.LoginTest@64bf3bbf]" name="tearDown" is-config="true" duration-ms="460204" started-at="2017-09-01T17:45:30Z" finished-at="2017-09-01T17:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cts.tests.LoginTest -->
+    </test> <!-- FFTest -->
+  </suite> <!-- Suite -->
+</testng-results>

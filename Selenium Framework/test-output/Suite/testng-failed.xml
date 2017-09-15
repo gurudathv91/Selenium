@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="FFTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://demoqa.com/registration/"/>
+    <classes>
+      <class name="com.cts.tests.LoginTest">
+        <methods>
+          <include name="userRegistration"/>
+          <include name="setUp"/>
+          <include name="afterTest"/>
+          <include name="tearDown"/>
+          <include name="takeScreenShotOnFailure"/>
+        </methods>
+      </class> <!-- com.cts.tests.LoginTest -->
+    </classes>
+  </test> <!-- FFTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
