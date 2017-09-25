@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>P:\Users\gurudath.v\Workspaces\workspace1\Selenium Framework\testng.xml</span>
+                    <span>P:\Users\gurudath.v\Workspaces\workspace1\git\Selenium\Selenium Framework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.cts.tests.LoginTest" hash-for-method="submitBlankForm">submitBlankForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.cts.tests.LoginTest" hash-for-method="submitBlankForm">submitBlankForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.cts.tests.LoginTest" hash-for-method="userRegistration">userRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,6 +147,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="submitBlankForm">
+                  </a> <!-- submitBlankForm -->
+                  <span class="method-name">submitBlankForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegistration">
+                  </a> <!-- userRegistration -->
+                  <span class="method-name">userRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="userRegistration">
                   </a> <!-- userRegistration -->
                   <span class="method-name">userRegistration</span>
@@ -147,7 +171,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">P:\Users\gurudath.v\Workspaces\workspace1\Selenium Framework\testng.xml</span>
+            <span class="header-content">P:\Users\gurudath.v\Workspaces\workspace1\git\Selenium\Selenium Framework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -161,6 +185,13 @@
       &lt;class name=&quot;com.cts.tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FFTest --&gt;
+  &lt;test name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;http://demoqa.com/registration/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cts.tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,6 +204,9 @@
             <ul>
               <li>
                 <span class="test-name">FFTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,20 +232,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'userRegistration')
 data.setCell(0, 2, 'com.cts.tests.LoginTest')
-data.setCell(0, 3, 2746);
+data.setCell(0, 3, 1506);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'submitBlankForm')
+data.setCell(1, 1, 'userRegistration')
 data.setCell(1, 2, 'com.cts.tests.LoginTest')
-data.setCell(1, 3, 441);
+data.setCell(1, 3, 434);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'submitBlankForm')
+data.setCell(2, 2, 'com.cts.tests.LoginTest')
+data.setCell(2, 3, 424);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'submitBlankForm')
+data.setCell(3, 2, 'com.cts.tests.LoginTest')
+data.setCell(3, 3, 117);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -244,28 +286,50 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">submitBlankForm</span>
-                <span class="method-start">17356 ms</span>
+                <span class="method-start">11999 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=submitBlankForm status=SUCCESS method=LoginTest.submitBlankForm()[pri:0, instance:c...)</span>
-                <span class="method-start">17799 ms</span>
+                <span class="method-start">12425 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">userRegistration</span>
-                <span class="method-start">18004 ms</span>
+                <span class="method-start">12558 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=userRegistration status=SUCCESS method=LoginTest.userRegistration()[pri:0, instance...)</span>
-                <span class="method-start">20752 ms</span>
+                <span class="method-start">14064 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">20960 ms</span>
+                <span class="method-start">14195 ms</span>
               </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">21134 ms</span>
-              </div> <!-- configuration-suite after -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp(chrome, http://demoqa.com/registration/)</span>
+                <span class="method-start">675801 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">submitBlankForm</span>
+                <span class="method-start">684860 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=submitBlankForm status=SUCCESS method=LoginTest.submitBlankForm()[pri:0, instance:c...)</span>
+                <span class="method-start">684980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">userRegistration</span>
+                <span class="method-start">685273 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=userRegistration status=SUCCESS method=LoginTest.userRegistration()[pri:0, instance...)</span>
+                <span class="method-start">685707 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterTest</span>
+                <span class="method-start">686001 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
